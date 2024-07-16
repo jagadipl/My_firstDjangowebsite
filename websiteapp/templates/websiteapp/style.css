@@ -1,0 +1,40 @@
+img{ 
+border-radius:50%
+}
+nav ul{
+    list-style-type: none;
+    background-color:yellowgreen;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li{
+    float: left;
+}
+nav li a {
+    color:blue;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+nav li a:hover{
+    background-color: black
+}
+input,textarea{
+    display: block;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 15px;
+    background-color: bisque;
+}
+
+
+ p{
+    font-style: italic;
+    font-size: large;
+ }
+table,th,tr,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
