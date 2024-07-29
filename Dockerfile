@@ -13,9 +13,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of application code into the container
 COPY . /app/
 
+# Collect static files
+RUN python manage.py collectstatic --noinput
 
 # Run on Port
 EXPOSE 8000
 
 # Run Django
-CMD [ "python", "manage.py", "runserver", "0.0.0.0:8001" ]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8001"]
